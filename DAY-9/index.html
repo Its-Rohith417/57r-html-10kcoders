@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BUSPASSS</title>
+</head>
+<body>
+    <fieldset style="background-color: lightblue;"><center><img src="tsrtc logo.webp" height="100" width="100" alt="tsrtc">
+        <h2 <p style="color: blue;"</p><u>STATE ROAD TRANSPORT CORPORATION</u></h2>
+        <h3><u>GENERAL BUS PASS APPLICATION</u></h3>
+    </center>
+</fieldset>
+    <center>
+        <form action="./index2.html">
+            <fieldset>
+                <legend><b><button type="button" style="background-color: deepskyblue;">Applicant Details</button></b></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="applicant_name" value required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="Fathername">Father's /Guardian's Name:</label>
+                <input type="text" id="name" name="applicant_name" value required>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="date" name="Date of Birth" value required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="Gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female" required>
+                <label for="female">Female</label>
+                <br> <br>
+                <label for="dob">Age As on:</label>
+                <input type="tel" id="Age_year" name="Age_year" size="2" value required>
+                <label for="dob">Year(s)</label>
+                <input type="tel" id="Age_month" name="Age_month" size="2" value required>
+                <label for="dob">Month(s)</label>
+                <input type="tel" id="Age_Day" name="Age_Day" size="2" value required>
+                <label for="dob">Day(s)</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="Aadhaar">Aadhaar No:</label>
+                <input type="tel" id="Aadhaar" name="Aadhaar"  value required>
+                <br><br>
+                <label for="whatsapp">WhatsApp No:</label>
+                <input type="tel" id="whatsapp" name="whatsapp"  value required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="email">E-mail Id:</label>
+                <input type="email" id="email" name="email"  value required>
+                <br><br>
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo">
+
+            </fieldset><br>
+            <fieldset>
+                <legend><b><button type="button" style="background-color: deepskyblue;">Residental Address Details</button></b></legend>
+            <label for="Applicant Address">Applicant's Address:</label>
+            <textarea name="Address" id="Applicant Address" required></textarea>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="District">District:</label>
+            <select name="district" id="district" required>
+                <option value disabled selected>---option---</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Rajanna Sircilla">Rajanna Sircilla</option>
+                <option value="Karimnagar">Karimnagar</option>
+                <option value="Siddipet">Siddipet</option>
+            </select>
+            <br><br>
+            <label for="Mandal">Mandal:</label>
+            <select name="Mandal" id="Mandal" required>
+                <option value disabled selected>---option---</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Sircilla">Sircilla</option>
+                <option value="Ghatkesar">Ghatkesar</option>
+                <option value="Vemulawada">Vemulawada</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Village">Village:</label>
+            <select name="Village" id="Village" required>
+                <option value disabled selected>---option---</option>
+                <option value="Ghatkesar">Ghatkesar</option>
+                <option value="Annojiguda">Annojiguda</option>
+                <option value="Uppal">Uppal</option>
+                <option value="Narapally">Narapally</option>
+            </select>
+             <br><br>
+             <label for="pincode">Pincode:</label>
+             <input type="tel" id="pincode" name="pincode" required maxlength="6" pattern="\d{6}">
+        </fieldset>
+            <br>
+            <fieldset>
+                 <legend><b><button type="button" style="background-color: deepskyblue;">Pass Type Details</button></b></legend>
+                 <label for="city">City:</label>
+            <select name="city" id="city" required>
+                <option value disabled selected>---option---</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Sircilla">Uppal</option>
+                <option value="Ghatkesar">Ghatkesar</option>
+            </select>
+             <br> <br>
+               <label for="passtype">Pass Type:</label>
+            <select name="passtype" id="passtype" required>
+                <option value disabled selected>---option---</option>
+                <option value="GREATER PASS">GREATER PASS</option>
+                <option value="GENERAL ORDINARY ROUTE MTLY">GENERAL ORDINARY ROUTE MTLY</option>
+                <option value="ORDINARY PASS">ORDINARY PASS</option>
+                <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+                <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+            </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b><button type="button" style="background-color: deepskyblue;"> Mode Of Payment & Pass Collection</button></b></legend>
+                  <label for="payment mode">Payment Mode:</label>
+            <select name="payment mode" id="payment mode" required>
+                <option value disabled selected>---option---</option>
+                <option value="Online">Online</option>
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+            </select>
+            <br> <br>
+            <label for="pass delivery mode">Pass Delivery Mode:</label>
+            <select name="pass delivery mode" id="pass delivery mode" required>
+                <option value disabled selected>---option---</option>
+                <option value="Online">Online</option>
+                <option value="At Counter">At Counter</option>
+            </select>
+            <br> <br>
+            <label for="collect pass">Center at Which you want to Collect Pass:</label>
+            <select name="collect pass" id="collect pass" required>
+                <option value disabled selected>------option------</option>
+                <option value="RTC KUKATPALLY--HYD[31/07/2025]">RTC KUKATPALLY--HYD[31/07/2025]</option>
+                <option value="RTC GHATKESAR--HYD[31/07/2025]">RTC GHATKESAR--HYD[31/07/2025]</option>
+                <option value="RTC UPPAL--HYD[31/07/2025]">RTC UPPAL--HYD[31/07/2025]</option>
+                <option value="RTC JBS--HYD[31/07/2025]">RTC JBS--HYD[31/07/2025]</option>
+                <option value="RTC SECUNDRABAD--HYD[31/07/2025]">RTC SECUNDRABAD--HYD[31/07/2025]</option>
+            </select>
+            </fieldset><br>
+            <center><img src="captcha.png" height=40 alt="captcha"></center>
+            <br>
+            <input type="text" id="captcha" name="captcha"><br><br>
+            <button>submit</button>
+        </form>
+    </center>
+</body>
+</html>
